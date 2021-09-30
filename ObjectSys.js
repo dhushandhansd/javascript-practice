@@ -23,29 +23,39 @@ const trip = {
 // Object Handler
 const tripHandler = {
   set : (obj, prop, val) => {
-    Object.freeze(obj)
-    console.group("Create Function")
-    console.log("EL16 - Trying to Add Value")
-    console.log(obj.constructor.name , prop, "is restricted from Updating")
-    console.log("Timestamp", Date.now())
+    if(Object.isFrozen(obj)) {
+      console.group("EL16 - Trying to Update Value")
+      console.log(obj.constructor.name , prop, "is restricted from Updating")
+      var timestamp = Date.now()
+      console.log("Timestamp", timestamp)
+      localStorage.setItem("Action", "update")
+      localStorage.setItem("TimeStamp", timestamp)
+      console.groupEnd()
+    } else {
+      console.log("Object Not Frozen")
+    }
+    
   },
 
   get : (obj, prop) => {
     if(prop in obj) {
       return obj[prop]
     } else {
-      console.group("Read Function")
-      console.log("EL38 - Value not Available")
+      console.group("EL38 - Trying to Read Value not Available")
       console.log("Timestamp", Date.now())
+      var timestamp = Date.now()
+      localStorage.setItem("Action", "Read")
+      localStorage.setItem("TimeStamp", timestamp)
+      console.groupEnd()
     }
   },
 
-  delete : (obj, prop) => {
-    Object.seal(obj)
-    if(prop in obj) {
-      console.log("EL46", prop, "attempted to be deleted")
-    } else {
-      console.log("EL48 - Value not available")
+  deleteProperty(obj, prop, receiver){
+    // console.log("Delete prop", Object.isSealed(obj), prop in obj, prop, obj)
+    if(Object.isSealed(obj) && prop in obj) {
+      console.group("EL60 Attempting to Delete")
+      console.log("EL60", prop, "is Sealed and cannot be deleted")
+      console.groupEnd()
     }
   },
 
@@ -55,11 +65,14 @@ const tripHandler = {
 const tripProxy = new Proxy(trip, tripHandler)
 
 //Update
+Object.freeze(tripProxy)
 tripProxy.paymentMode = "Cash"
 
 //Read
-tripProxy.paymentMode
+console.log(tripProxy.paymentMode)
 
 //Delete
-delete tripProxy.location
-console.log(tripProxy)
+Object.seal(tripProxy)
+delete tripProxy["location"]
+console.log(tripProxy["location"])
+
