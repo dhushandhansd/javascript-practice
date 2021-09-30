@@ -28,6 +28,7 @@ const tripHandler = {
       console.log(obj.constructor.name , prop, "is restricted from Updating")
       var timestamp = Date.now()
       console.log("Timestamp", timestamp)
+      localStorage.setItem("Object", obj.constructor.name)
       localStorage.setItem("Action", "update")
       localStorage.setItem("TimeStamp", timestamp)
       console.groupEnd()
@@ -44,6 +45,7 @@ const tripHandler = {
       console.group("EL38 - Trying to Read Value not Available")
       console.log("Timestamp", Date.now())
       var timestamp = Date.now()
+      localStorage.setItem("Object", obj.constructor.name)
       localStorage.setItem("Action", "Read")
       localStorage.setItem("TimeStamp", timestamp)
       console.groupEnd()
@@ -54,6 +56,10 @@ const tripHandler = {
     // console.log("Delete prop", Object.isSealed(obj), prop in obj, prop, obj)
     if(Object.isSealed(obj) && prop in obj) {
       console.group("EL60 Attempting to Delete")
+      var timestamp = Date.now()
+      localStorage.setItem("Object", obj.constructor.name)
+      localStorage.setItem("Action", "delete")
+      localStorage.setItem("TimeStamp", timestamp)
       console.log("EL60", prop, "is Sealed and cannot be deleted")
       console.groupEnd()
     }
