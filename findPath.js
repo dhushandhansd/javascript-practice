@@ -1,3 +1,11 @@
+/** ALGORITHM
+ *  Create a Function called findPath and pass obj and string as paramater
+ *  Split all '.' with split funtion 
+ *  Add all the items in the string one by one with reduce function
+ *  Store it in the variable findPath
+ *  Call the findPath function with necessary parameter
+**/
+
 
 var obj = {
     a: {
