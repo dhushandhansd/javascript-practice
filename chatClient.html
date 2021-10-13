@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/socket.io/socket.io.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="title-container">
+      <h1>Chat.io</h1>
+    </div>
+    <div class="body-container">
+      <div class="chat-body">
+        <div class="chat-header">Chat Header</div>
+        <div class="chat-body">
+          <ul id="messages"></ul>
+        </div>
+        <div class="chat-bottom">
+          <form id="chatBoxId" class="chat-box">
+            <input id="msg-id" name="chat-msg" class="chat-input" type="text" name="chatBox" placeholder="Type the Message">
+            <button id="msg-btn-id" class="send-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<style>
+
+  .main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title-container {
+    width: 100%;
+    text-align: center;
+    background-color: tomato;
+    flex: .2;
+  }
+
+  .body-container {
+    width: 100%;
+    text-align: center;
+    background-color: tomato;
+    flex: .8;
+    height: 500px;
+  }
+
+  .chat-body {
+    height: 480px;
+    background-color: tomato;
+  }
+
+  .chat-header {
+    background-color: violet;
+  }
+
+  .chat-body {
+    background-color: yellowgreen;
+  }
+
+  .chat-bottom {
+    height: 70px;
+    background-color: tomato;
+  }
+
+  .chat-input {
+    margin-top: 15px;
+    width: 90%;
+    height: 40px;
+    outline: none;
+    text-align: center;
+  }
+
+  .chat-input:focus {
+    border: none;
+    outline: none;
+  }
+
+  .send-btn {
+    width: 80px;
+    height: 45px;
+  }
+
+</style>
+
+<script>
+  var socket = io()
+
+  var chatForm = document.getElementById('chatBoxId')
+
+  var msgInput = document.getElementById('msg-id')
+
+  var messageList = document.getElementById('messages')
+
+  chatForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    if(msgInput.value) {
+      socket.emit('chat message', msgInput.value)
+      msgInput.value = ''
+    }
+  })
+
+  socket.on('chat message', (chatMsg) => {
+    var messageItem = document.createElement('li')
+    messageItem.textContent = chatMsg
+    messageList.appendChild(messageItem)
+    window.scrollTo(0, document.body.scrollHeight)
+  })
+
+</script>
+</html>
