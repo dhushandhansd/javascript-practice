@@ -6,9 +6,9 @@
  */
 
 
-const fetchPromsie = () => {
+const fetchPromsie = async () => {
   console.log('API Fetch Started')
-  new Promise((response, reject) => {
+   await new Promise((response, reject) => {
     var randomNumber = Math.floor(Math.random() * 5)
     fetch(`https://swapi.dev/api/people/${randomNumber}`)
     .then(res => {
