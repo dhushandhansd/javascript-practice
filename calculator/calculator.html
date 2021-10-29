@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./calculator.js" defer></script>
+  <link rel="stylesheet" href="./styles.css" type="text/css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="calculator">
+      <div class="display-section">
+        <input id="calc-input" type="text" placeholder="0">
+      </div>
+      <div class="buttons-section">
+        <div class="numbers-section">
+          <div class="number clear" onclick="__clearInput()">
+            C
+          </div>
+          <div onclick="__oneButton()" id="one" class="number">
+            1
+          </div>
+          <div onclick="__twoButton()" id="two" class="number">
+            2
+          </div>
+          <div onclick="__threeButton()" id="three" class="number">
+            3
+          </div>
+          <div onclick="__fourButton()" id="four" class="number">
+            4
+          </div>
+          <div onclick="__fiveButton()" id="five" class="number">
+            5
+          </div>
+          <div onclick="__sixButton()" id="six" class="number">
+            6
+          </div>
+          <div onclick="__sevenButton()" id="seven" class="number">
+            7
+          </div>
+          <div onclick="__eightButton()" id="eight" class="number">
+            8
+          </div>
+          <div onclick="__nineButton()" id="nine" class="number">
+            9
+          </div>
+          <div onclick="__zeroButton()" id="zero" class="number">
+            0
+          </div>
+        </div>
+        <div class="operations-section">
+          <div id="star" onclick="__starFun()" class="operator">
+            *
+          </div>
+          <div id="divide" onclick="__slashFun()" class="operator">
+            /
+          </div>
+          <div id="plus" onclick="__plusFun()" class="operator">
+            +
+          </div>
+          <div id="minus" onclick="__minusFun()" class="operator">
+            -
+          </div>
+          <div id="equal" onclick="__calculate()" class="operator equal">
+            =
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyrights">Copyrights © UKSD</div>
+  </div>
+</body>
+</html>
+
+<!-- @author - UKSD -->
