@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1f2326), to(#2c3033));
+  background-image: linear-gradient(#1f2326, #2c3033);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .calculator {
+  width: 300px;
+  height: 550px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3f4444), to(#181c1f));
+  background-image: linear-gradient(#3f4444, #181c1f);
+  border: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.363);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.363);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .calculator .display-section {
+  -webkit-box-flex: .3;
+      -ms-flex: .3;
+          flex: .3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .calculator .display-section #calc-input {
+  background: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+}
+
+.main-container .calculator .display-section #calc-input:focus {
+  outline: none;
+}
+
+.main-container .calculator .buttons-section {
+  -webkit-box-flex: .7;
+      -ms-flex: .7;
+          flex: .7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-container .calculator .buttons-section .numbers-section {
+  -webkit-box-flex: .8;
+      -ms-flex: .8;
+          flex: .8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  margin-left: 20px;
+}
+
+.main-container .calculator .buttons-section .numbers-section .number {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  background: #37393c;
+  border: none;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.363);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.363);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-container .calculator .buttons-section .numbers-section .clear {
+  background: #fdb82c;
+}
+
+.main-container .calculator .buttons-section .operations-section {
+  -webkit-box-flex: .2;
+      -ms-flex: .2;
+          flex: .2;
+  margin-right: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+.main-container .calculator .buttons-section .operations-section .operator {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  background: #48335c;
+  border: none;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.363);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.363);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-container .calculator .buttons-section .operations-section .equal {
+  background: #9028e0;
+  height: 90px;
+}
+
+.main-container .copyrights {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.418);
+  margin-top: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=styles.css.map */
