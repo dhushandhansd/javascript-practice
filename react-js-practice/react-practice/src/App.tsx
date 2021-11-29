@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import CusHooks from './hooksStates/CusHooks'
-
+import RefHook from './hooksStates/RefHook'
 
 function App() {
   return (
-    <CusHooks/>
+    <RefHook/>
   )
 }
 

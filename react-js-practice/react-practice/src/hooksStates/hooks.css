@@ -9,4 +9,34 @@
         0 0 92px #0fa,
         0 0 102px #0fa,
         0 0 151px #0fa;
-  }
+}
+
+.payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.opt_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.submitBtn {
+    margin-top: 20px;
+}
+
+.otpF1 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.l-spacing {
+    margin-left: 10px;
+}
