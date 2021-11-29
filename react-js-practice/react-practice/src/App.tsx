@@ -1,22 +1,20 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import DeBouncingCus from './hooksStates/DeBouncingCus'
-import Blogs from './Routing/Blogs'
-import ContactUs from './Routing/ContactUs'
-import Dashboard from './Routing/Dashboard'
+import HomePage from './Portfolio/HomePage'
+import Projects from './Portfolio/Projects'
+
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<Dashboard/>}/>
-    //     <Route path="/blogs" element={<Blogs/>}/>
-    //     <Route path="/contact" element={<ContactUs/>}/>
-    //   </Routes>
-    // </BrowserRouter>
-
-    <DeBouncingCus/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/projects' element={<Projects/>}/>
+        {/* <Route path='/aboutMe' element={<AboutMe/>}/>
+        <Route path='/contactme' element={<contactMe/>}/> */}
+      </Routes>
+    </BrowserRouter>
   )
 }
 

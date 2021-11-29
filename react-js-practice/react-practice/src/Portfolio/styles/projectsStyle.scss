@@ -1,0 +1,22 @@
+.projects-container {
+    background-image: url('../../assets/Projects.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100%;
+    overflow-x: hidden;
+
+    .projects-section {
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .projects-window {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            
+        }
+    }
+}

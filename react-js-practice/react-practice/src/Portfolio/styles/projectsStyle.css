@@ -1,0 +1,28 @@
+.projects-container {
+  background-image: url("../../assets/Projects.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 100%;
+  overflow-x: hidden;
+}
+
+.projects-container .projects-section .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-container .projects-section .projects-window {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+/*# sourceMappingURL=projectsStyle.css.map */

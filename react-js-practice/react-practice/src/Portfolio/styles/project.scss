@@ -1,0 +1,40 @@
+.project-frame {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #D8E2EE;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 6px 7px #D8E2EE;
+    cursor: pointer;
+    transition: 0.5s;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background-size: contain;
+    }
+
+    // p {
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 35%;
+    //     left: 30%;
+    //     display: block;
+    // }
+
+    // P:hover {
+    //     opacity: 1;
+    // }
+}
+
+.project-frame:hover {
+    width: 310px;
+    height: 210px;
+}
