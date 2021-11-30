@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import CusHooks from './hooksStates/CusHooks'
 
 
 function App() {
   return (
-    <CusHooks/>
+    <h1>Vite App</h1>
   )
 }
 
