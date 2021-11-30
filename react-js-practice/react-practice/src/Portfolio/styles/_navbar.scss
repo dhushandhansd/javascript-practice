@@ -1,0 +1,36 @@
+.navbar-container {
+    display: flex;
+    justify-content: center;
+
+    .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        .navbar-brand {
+            margin: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .navbar-brand:hover {
+            color: rgb(81, 81, 228);
+            font-weight: 500;
+        }
+
+        .navbar-list {
+            list-style-type: none;
+            list-style: none;
+            display: flex;
+    
+            .navbar-item {
+                margin: 20px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .navbar-item:hover {
+                color: rgb(81, 81, 228);
+            }
+        }
+    }
+}
