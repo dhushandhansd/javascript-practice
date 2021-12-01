@@ -1,11 +1,41 @@
-.photo-grid {
-  display:flex;
-  flex-direction: row;
+.main-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.photo-grid {
+  width: 400px;
+  height: 600px;
+  justify-content: center;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
 .postImage {
   width: 300px;
   height: 300px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+}
+
+.viewBtn {
+  margin: none;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: tomato;
+  color: black;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.viewBtn:hover {
+  color: white;
+  background-color: black;
 }

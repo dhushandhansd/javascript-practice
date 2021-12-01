@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Post from "./Post";
-
+import './grid.css'
 const MainPage = () => {
 
   const FACEBOOK_API = process.env.FACEBOOK_API
@@ -29,20 +29,21 @@ const MainPage = () => {
     if(!media || media.length == 0) {
       return null
     }
-    const list = media.map((val:any) => {
-      return <Post image={val.media_url} caption={val.caption} key={val.id}/>
+    const list = media.map((post:any) => {
+      return <Post image={post.media_url} caption={post.caption} key={post.id} permalink={post.permalink}/>
     })
 
     return list
   }
 
   return(
-    <div>
-      <h2>Instagram Test API</h2>
-      <div id="instagram-feed1" className="instagram_feed"></div>
+    <div className="main-container">
+      <h2>Instagram API</h2>
+      <div className="posts">
       {
         _renderPost()
       }
+      </div>
       
     </div>
   )
