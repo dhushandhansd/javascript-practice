@@ -1,7 +1,7 @@
 import './grid.css'
 
 const Post = (props:any) => {
-  console.log("Line2",props)
+  // console.log("Line2",props)
 
   const _handleImage = () => {
     window.open(props.permalink, "_blank")

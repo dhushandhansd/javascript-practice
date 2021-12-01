@@ -15,15 +15,16 @@ const MainPage = () => {
     fetch(url)
     .then(res => res.json())
     .then(userData => {
-
       if(!userData || !userData.data) {
+        console.log("Line 23 - API Handshake Success")
         return
       }
+      console.log("Line 26 - API Handshake Success")
       setMedia(userData.data)
     })
   }, [])
 
-  console.log("Line42", media)
+  // console.log("Line42", media)
 
   const _renderPost = () => {
     if(!media || media.length == 0) {

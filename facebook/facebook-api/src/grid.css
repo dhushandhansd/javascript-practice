@@ -21,6 +21,12 @@
   cursor: pointer;
   border: none;
   border-radius: 25px;
+  transition: .4s;
+}
+
+.postImage:hover {
+  width: 315px;
+  height: 315px;
 }
 
 .viewBtn {
