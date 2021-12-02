@@ -13,6 +13,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 10px;
+  position: relative;
 }
 
 .postImage {
@@ -44,4 +45,15 @@
 .viewBtn:hover {
   color: white;
   background-color: black;
+}
+
+.videoIcon {
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 47%;
+  top: 25%;
+  cursor: pointer;
+  pointer-events: none;
 }
