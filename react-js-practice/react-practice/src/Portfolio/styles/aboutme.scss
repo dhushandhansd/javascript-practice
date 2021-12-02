@@ -1,0 +1,28 @@
+.about-container {
+    background-image: url('../../assets/About\ me.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.aboutcom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    width: 450px;
+    height: 250px;
+    background-color: #D8E2EE;
+    box-shadow: 0 6px 7px #D8E2EE;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+}

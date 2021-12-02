@@ -1,11 +1,19 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import MainComp from './redux/MainComp'
+import About from './Portfolio/About'
+import HomePage from './Portfolio/HomePage'
+import Projects from './Portfolio/Projects'
 
 const App = () => {
   return (
-    <MainComp/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/projects' element={<Projects/>}/>
+        <Route path='/aboutme' element={<About/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

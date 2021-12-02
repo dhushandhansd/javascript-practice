@@ -18,12 +18,11 @@ const Navbar = () => {
                             PROJECTS
                         </li>
                     </Link>
-                    <li className="navbar-item">
-                        ABOUT ME
-                    </li>
-                    <li className="navbar-item">
-                        CONTACT ME
-                    </li>
+                    <Link to="/aboutme">
+                        <li className="navbar-item">
+                            ABOUT ME
+                        </li>
+                    </Link>
                 </ul>
             </div>
             
