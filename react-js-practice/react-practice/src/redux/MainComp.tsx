@@ -31,7 +31,9 @@ const MainComp = () => {
     store.dispatch(decrement())
 
     return(
-        <div></div>
+        <div>
+            <button>Child</button>
+        </div>
     )
 }
 
