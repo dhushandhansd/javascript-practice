@@ -1,7 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 
 const MetaTrader = () => {
-  const stocks = useSelector((state: any) => state.stocks);
+  const {stocks} = useSelector((state: any) => {
+    return state.RootReducer;
+  });
   const dispatch = useDispatch();
 
   const buyer = () => {

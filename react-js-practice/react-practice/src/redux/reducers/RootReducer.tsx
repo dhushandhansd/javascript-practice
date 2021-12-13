@@ -5,9 +5,9 @@ const initialState = {
 const RootReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case "SELL":
-      return { ...state, initialState: initialState.stocks - 10 };
+      return { ...state, stocks : state.stocks - 10 };
     case "BUY":
-      return { ...state, initialState: initialState.stocks + 10 };
+      return { ...state, stocks : state.stocks + 10 };
     default:
       return state;
   }
