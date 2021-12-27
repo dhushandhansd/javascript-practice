@@ -1,0 +1,15 @@
+{
+  "name": "node-js-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodeServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon fileSystem.js"
+  },
+  "author": "UKSD",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
