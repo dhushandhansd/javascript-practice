@@ -17,9 +17,6 @@ mongoose.connect(process.env.DB_CONNECTION, (err: any) => {
 
 
 
-
-
-
 //Basic Routes and Middleware
 app.use(bodyParser.json());
 
@@ -47,7 +44,9 @@ app.use("/mynotes", readRoute);
 const deleteRoute = require("./src/api/notes/Delete/routes");
 app.use("/deletenote", deleteRoute);
 
-
+//Read Specific Route
+const readOneNote = require("./src/api/notes/ReadOne/routes");
+app.use("/readnote", readOneNote);
 
 
 
