@@ -121,7 +121,7 @@ export const getUsers = async (req:Request, res:Response) => {
         if(!resp || resp == null) {
             res.send({msg:"No Users Found"});
         }
-        res.send({msg:resp});
+        res.send({resp});
     } catch(err) {
         console.log(err);
     }
