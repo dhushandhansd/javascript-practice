@@ -1,0 +1,523 @@
+.user-window {
+  width: 100%;
+  height: 100vh;
+  background-color: #b0b4c8;
+  overflow: auto;
+}
+
+.user-window .users-container-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: -50px;
+}
+
+.user-window .users-container-wrapper .users-container {
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border: none;
+  -webkit-box-shadow: 16px 16px 16px #00000029;
+          box-shadow: 16px 16px 16px #00000029;
+  border-radius: 20px;
+  opacity: 1;
+  color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.user-window .users-container-wrapper .users-container .operations {
+  border-radius: 20px;
+  -webkit-box-flex: 2.5;
+      -ms-flex: 2.5;
+          flex: 2.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+}
+
+.user-window .users-container-wrapper .users-container .operations .ope {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.user-window .users-container-wrapper .users-container .operations .ope:hover {
+  background-color: #b0b4c8;
+  color: black;
+}
+
+.user-window .users-container-wrapper .users-container .operations .create-user,
+.user-window .users-container-wrapper .users-container .operations .get-user,
+.user-window .users-container-wrapper .users-container .operations .get-users,
+.user-window .users-container-wrapper .users-container .operations .update-user,
+.user-window .users-container-wrapper .users-container .operations .delete-user {
+  height: 45px;
+  margin: 15px 20px;
+  background-color: #0e0239;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.user-window .users-container-wrapper .users-container .welcome-screen {
+  border-radius: 20px;
+  -webkit-box-flex: 7.5;
+      -ms-flex: 7.5;
+          flex: 7.5;
+  background-color: #717493;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.user-window .users-container-wrapper .users-container .welcome-screen .welcome-text {
+  margin-left: 30%;
+}
+
+.user-window .users-container-wrapper .users-container .create-fields,
+.user-window .users-container-wrapper .users-container .read-fields {
+  border-radius: 20px;
+  -webkit-box-flex: 7.5;
+      -ms-flex: 7.5;
+          flex: 7.5;
+  background-color: #717493;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.user-window .users-container-wrapper .users-container .create-fields .field,
+.user-window .users-container-wrapper .users-container .read-fields .field {
+  width: 70%;
+  padding: 20px 0;
+  padding-left: 200px;
+  color: #0e0239;
+}
+
+.user-window .users-container-wrapper .users-container .create-fields .field label,
+.user-window .users-container-wrapper .users-container .read-fields .field label {
+  color: white;
+  font-weight: bold;
+  margin-right: 20px;
+  text-shadow: 16px 16px 16px #00000029;
+}
+
+.user-window .users-container-wrapper .users-container .create-fields .field input,
+.user-window .users-container-wrapper .users-container .read-fields .field input {
+  padding-left: 20px;
+  height: 40px;
+  width: 60%;
+  border: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 16px 16px 16px #00000029;
+          box-shadow: 16px 16px 16px #00000029;
+}
+
+.user-window .users-container-wrapper .users-container .create-fields .field input:focus,
+.user-window .users-container-wrapper .users-container .read-fields .field input:focus {
+  outline: none;
+}
+
+.user-window .users-container-wrapper .users-container .create-fields .field .submitbox,
+.user-window .users-container-wrapper .users-container .read-fields .field .submitbox {
+  width: 120px;
+  height: 32px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.user-window .users-container-wrapper .users-container .create-fields .field .submitbox:hover,
+.user-window .users-container-wrapper .users-container .read-fields .field .submitbox:hover {
+  background-color: #0e0239;
+  color: white;
+}
+
+.user-window .users-container-wrapper .users-container .read-cus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-window .users-container-wrapper .users-container .read-cus .field {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-left: 10%;
+}
+
+.user-window .users-container-wrapper .users-container .read-cus .field input {
+  text-align: center;
+}
+
+.user-window .users-container-wrapper .users-container .read-cus .user-details {
+  overflow-y: scroll;
+}
+
+.user-window .users-container-wrapper .users-container .read-cus .user-details .user-detail-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0e0239;
+  border: none;
+  border-radius: 20px;
+  margin: 20px 20px;
+  cursor: pointer;
+}
+
+.user-window .users-container-wrapper .users-container .read-cus .user-details .user-detail-list h3 {
+  width: 90%;
+  height: 15px;
+}
+
+.user-window .users-container-wrapper .users-container .read-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+}
+
+.user-window .users-container-wrapper .users-container .read-user .user-detail-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0e0239;
+  border: none;
+  border-radius: 20px;
+  margin: 20px 20px;
+  cursor: pointer;
+}
+
+.user-window .users-container-wrapper .users-container .read-user .user-detail-list h3 {
+  width: 90%;
+  height: 15px;
+}
+
+.user-window .users-container-wrapper .users-container .update-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-window .users-container-wrapper .users-container .update-fields .update-fields-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user-window .users-container-wrapper .users-container .update-fields .updateForm {
+  width: 120px;
+  height: 38px;
+  background-color: white;
+  color: #0e0239;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.user-window .users-container-wrapper .users-container .delete-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-window .users-container-wrapper .users-container .delete-fields .delete-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-window .users-container-wrapper .users-container .delete-fields .delete-fields .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-window .users-container-wrapper .users-container .delete-fields .deleteForm {
+  width: 120px;
+  height: 38px;
+  background-color: white;
+  color: #0e0239;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.user-window #snackbar {
+  width: 400px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 15px;
+}
+
+.user-window #snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.notebook-page {
+  background-color: #FFBC80;
+}
+
+.notebook-page .users-container-wrapper .users-container .operations .notebook-ope {
+  background-color: #F76E11;
+  color: white;
+}
+
+.notebook-page .users-container-wrapper .users-container .notebook-fields-wrap {
+  background-color: #FC4F4F;
+}
+
+.notebook-page .users-container-wrapper .users-container .notebook-fields-wrap .user-detail-list {
+  background-color: #5f06065e;
+}
+
+.notebook-page .users-container-wrapper .users-container .notebook-fields-wrap .user-details .user-detail-list {
+  background-color: #5f06065e;
+}
+
+.note-page {
+  background-color: #4FBDBA;
+}
+
+.note-page .users-container-wrapper .users-container .operations .notebook-ope {
+  background-color: #072227;
+}
+
+.note-page .users-container-wrapper .users-container .notes-fields-wrap {
+  background-color: #35858B;
+}
+
+.note-page .users-container-wrapper .users-container .notes-fields-wrap .user-detail-list {
+  background-color: #042b2e77;
+}
+
+.note-page .users-container-wrapper .users-container .notes-fields-wrap .user-details .user-detail-list {
+  background-color: #042b2e77;
+}
+
+.updateInput {
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin: 15px 0px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+/*# sourceMappingURL=AppS.css.map */

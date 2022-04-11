@@ -1,27 +1,22 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
-import { createStore, combineReducers, applyMiddleware } from 'redux'
-import RootReducer from './redux/reducers/RootReducer'
-import { Provider } from 'react-redux'
-import createSagaMiddleware from 'redux-saga'
-import {watchBuy} from './redux/sagas/saga'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
 
-const sagaMiddleware = createSagaMiddleware()
+import { Auth0Provider } from "@auth0/auth0-react";
 
-const reducers = combineReducers({
-  RootReducer,
-});
+const domain = process.env.REACT_APP_DOMAIN;
+const clientId = process.env.REACT_APP_CLIENT_ID;
 
-const store = createStore(reducers, applyMiddleware(sagaMiddleware));
-
-sagaMiddleware.run(watchBuy)
+console.log(domain, clientId);
 
 ReactDOM.render(
-
-  <Provider store={store}>
+  <Auth0Provider
+    domain={domain}
+    clientId={clientId}
+    redirectUri={window.location.origin}
+  >
     <App />
-  </Provider>,
-  document.getElementById('root')
-)
+  </Auth0Provider>,
+  document.getElementById("root")
+);

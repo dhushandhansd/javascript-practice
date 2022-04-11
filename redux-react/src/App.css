@@ -1,0 +1,76 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.user-section {
+    display: flex;
+    flex: .2;
+    background-color: tomato;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 0.2);
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    margin-right: 10px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-comp {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(76, 111, 207);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 0.2);
+    width: 40%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.login-comp input {
+    width: 180px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.login-comp input:focus {
+    outline: none;
+}
+
+.login-comp button {
+    width: 80px;
+    height: 30px;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: white;
+}

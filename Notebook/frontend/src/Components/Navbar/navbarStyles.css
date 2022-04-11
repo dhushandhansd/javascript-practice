@@ -1,0 +1,40 @@
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.navbar h3 {
+  margin: 20px 20px;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.navbar h3:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  -webkit-transition: width 0.5s ease, background-color 0.5s ease;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.navbar h3:hover:after {
+  width: 100%;
+  background: #0e0239;
+}
+/*# sourceMappingURL=navbarStyles.css.map */

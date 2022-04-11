@@ -108,7 +108,7 @@ export const readOneUser = async (req:Request, res:Response) => {
         if(!resp) {
             res.send({msg:"User not Found"});
         }
-        res.send({msg:resp})
+        res.send({resp})
     } catch(err) {
         console.log(err);
     }
